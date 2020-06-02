@@ -1,0 +1,10 @@
+{% extends 'accounts/base.html' %}
+{% block content %}
+
+    {% if user.is_active and user.is_Manager %}
+        <h1>You are registered as a manager</h1>
+    {% else %}
+        <h1>You are registered as a customer </h1>
+    {% endif %}
+
+{% endblock content %}
